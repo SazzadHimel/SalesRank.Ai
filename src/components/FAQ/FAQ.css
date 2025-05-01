@@ -1,0 +1,284 @@
+.faq-section {
+  padding: 60px 5%;
+  background: white;
+  margin: 0 auto;
+}
+
+.faq-header {
+  margin-bottom: 40px;
+}
+
+.header-content {
+  display: flex;
+  align-items: top;
+  font-weight: 200;
+  gap: 100px;
+}
+
+.faq-label {
+  font-size: 16px;
+  max-width: 10%;
+  color: #000000;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
+.faq-title {
+  font-size: 42px;
+  max-width: 60%;
+  align-content: center;
+  color: #000000;
+  margin: 0;
+  line-height: 1.3;
+  font-weight: 400;
+}
+
+.faq-items {
+  max-width: 100%;
+}
+
+.faq-item {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.faq-question {
+  width: 100%;
+  padding: 25px 0;
+  text-align: left;
+  background: none;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 100;
+  color: #000000;
+  transition: color 0.3s; 
+}
+
+.faq-question:hover {
+  color: #2b6cb0;
+}
+
+.faq-question.active {
+  color: #2b6cb0;
+}
+
+.faq-question-content {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  min-height: 26px;
+}
+
+.faq-number {
+  font-weight: 200;
+  font-size: larger;
+  margin-right: 15px;
+  color: #8d7e50;
+  min-width: 25px;
+  align-self: center;
+}
+
+.faq-toggle {
+  position: relative;
+  width: 26px;
+  height: 26px;
+  margin-left: 20px;
+  flex-shrink: 0;
+}
+
+.custom-plus,
+.custom-minus {
+  position: absolute;
+  background-color: #8d7e50;
+  transition: all 0.3s ease;
+}
+
+.custom-plus::before,
+.custom-plus::after,
+.custom-minus::before {
+  content: '';
+  position: absolute;
+  background-color: #8d7e50;
+}
+
+
+.custom-plus::before {
+  width: 2px;
+  height: 26px;
+  left: 12px;
+  top: 0;
+}
+
+.custom-plus::after {
+  width: 26px;
+  height: 2px;
+  left: 0;
+  top: 12px;
+}
+
+.custom-minus::before {
+  width: 26px;
+  height: 2px;
+  left: 0;
+  top: 14px;
+}
+
+.faq-question:hover .custom-plus::before,
+.faq-question:hover .custom-plus::after,
+.faq-question:hover .custom-minus::before {
+  background-color: #000000;
+}
+
+.faq-answer {
+  padding: 0;
+  max-height: 0;
+  max-width: 90%;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out, padding 0.3s ease;
+  color: #4a5568;
+  line-height: 1.6;
+  font-size: 16px;
+  margin-left: 40px;
+}
+
+.faq-answer.show {
+  padding-bottom: 25px;
+  max-height: 500px;
+}
+
+@media (max-width: 1024px) {
+  .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .faq-label {
+    font-size: 14px;
+    max-width: 100%;
+    white-space: normal;
+  }
+
+  .faq-title {
+    font-size: 32px;
+    max-width: 100%;
+  }
+
+  .faq-question {
+    font-size: 18px;
+  }
+
+  .faq-answer {
+    font-size: 15px;
+    margin-left: 30px;
+  }
+
+  .faq-toggle {
+    width: 22px;
+    height: 22px;
+  }
+
+  .custom-plus::before {
+    height: 22px;
+    left: 10px;
+  }
+
+  .custom-plus::after {
+    width: 22px;
+    top: 10px;
+  }
+
+  .custom-minus::before {
+    width: 22px;
+    top: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .faq-section {
+    padding: 40px 4%;
+  }
+
+  .faq-title {
+    font-size: 26px;
+  }
+
+  .faq-question {
+    font-size: 16px;
+    padding: 16px 0;
+  }
+
+  .faq-answer {
+    font-size: 14px;
+    margin-left: 20px;
+  }
+
+  .faq-toggle {
+    width: 20px;
+    height: 20px;
+  }
+
+  .custom-plus::before {
+    height: 20px;
+    left: 9px;
+  }
+
+  .custom-plus::after {
+    width: 20px;
+    top: 9px;
+  }
+
+  .custom-minus::before {
+    width: 20px;
+    top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .faq-section {
+    padding: 30px 3%;
+  }
+
+  .faq-title {
+    font-size: 22px;
+  }
+
+  .faq-question {
+    font-size: 15px;
+    padding: 14px 0;
+  }
+
+  .faq-answer {
+    font-size: 13px;
+    margin-left: 15px;
+  }
+
+  .faq-number {
+    font-size: 14px;
+    margin-right: 10px;
+  }
+
+  .faq-toggle {
+    width: 18px;
+    height: 18px;
+  }
+
+  .custom-plus::before {
+    height: 18px;
+    left: 8px;
+  }
+
+  .custom-plus::after {
+    width: 18px;
+    top: 8px;
+  }
+
+  .custom-minus::before {
+    width: 18px;
+    top: 9px;
+  }
+}

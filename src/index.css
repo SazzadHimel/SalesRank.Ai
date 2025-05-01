@@ -1,0 +1,48 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+.App {
+  font-family: "Questrial", sans-serif;
+  color: #2d3748;
+  line-height: 1.5;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #fff;
+}
+
+main {
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.container {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.space {
+  margin: 60px;
+}
+
+@media (max-width: 768px) {
+  .App {
+    font-size: 16px;
+  }
+}
