@@ -19,6 +19,7 @@
 .header-left {
     display: flex;
     align-items: center;
+    cursor: pointer;
     gap: 2.5rem;
 }
 
