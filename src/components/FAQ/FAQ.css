@@ -75,7 +75,7 @@
 
 .faq-number {
   font-weight: 200;
-  font-size: larger;
+  font-size: x-large;
   margin-right: 15px;
   color: #8d7e50;
   min-width: 25px;
@@ -250,6 +250,7 @@
   .faq-question {
     font-size: 15px;
     padding: 14px 0;
+    font-weight: 400;
   }
 
   .faq-answer {

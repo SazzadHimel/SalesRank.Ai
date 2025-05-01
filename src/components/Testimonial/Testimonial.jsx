@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Testimonial.css';
+import { FaArrowRight, FaArrowLeft } from 'react-icons/fa';
 
 const Testimonial = () => {
   const testimonials = [
@@ -77,13 +78,13 @@ const Testimonial = () => {
           <div className="testimonial-controls">
             <div className="navigation-arrows">
               <button onClick={prevTestimonial} className="arrow-btn">
-              🡠
+                <FaArrowLeft />
               </button>
               <div className="testimonial-counter">
                 {testimonials[currentIndex].id}<span className='count-color'>/0{testimonials.length}</span>
               </div>
               <button onClick={nextTestimonial} className="arrow-btn">
-              🡢
+                <FaArrowRight />
               </button>
             </div>
           </div>
